@@ -1,6 +1,6 @@
 <template>
-  <div>
-  	<div class="title">
+  <div class="container">
+  	<div class="title has-text-centered">
   		Halaman Tentang
   	</div>
   </div>

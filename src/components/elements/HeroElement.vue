@@ -1,7 +1,7 @@
 <template>
 	<section class="hero is-small">
 		<div class="hero-head">
-		  	<b-navbar>
+		  	<b-navbar fixed-top>
 		        <template slot="brand">
 		            <b-navbar-item tag="router-link" :to="{ path: '/' }">
 		                <img
@@ -15,14 +15,14 @@
 			    		<div v-if="menu.hasOwnProperty('child')">
 			    			<b-navbar-dropdown :label="menu.text">
 			    				<div v-for="mn in menu.child">
-			    					<b-navbar-item :href="mn.path">
+			    					<b-navbar-item  tag="router-link" :to="mn.path">
 			    						{{mn.text}}
 			    					</b-navbar-item>
 			    				</div>
 			    			</b-navbar-dropdown>
 			    		</div>
 			    		<div v-else>
-			    			<b-navbar-item :href="menu.path">
+			    			<b-navbar-item  tag="router-link" :to="menu.path">
 			    				{{menu.text}}
 			    			</b-navbar-item>
 			    		</div>
