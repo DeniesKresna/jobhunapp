@@ -1,27 +1,22 @@
 <template>
   <div id="app">
-    <div class="page-loading" v-show="isLoading">
-      <img src="./assets/images/loader.gif" alt="" />
-      Loading...
+    <b-loading :is-full-page="isFullPage" :active.sync="isLoading" :can-cancel="isCanCancel"></b-loading>
+    <div class="container is-fluid">
+        <header-element />
     </div>
-    <HeaderElement />
-    <!--
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
-    <router-view/>-->
   </div>
 </template>
 <script>
   import HeaderElement from './components/elements/HeaderElement'
+  import BannerElement from './components/elements/BannerElement'
   export default{
     components:{
-      HeaderElement
+      HeaderElement, BannerElement
     },
     data(){
       return{
-
+          isFullPage: true,
+          isCanCancel: false
       }
     },
     computed:{

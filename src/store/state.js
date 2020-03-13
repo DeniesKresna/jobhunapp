@@ -1,4 +1,5 @@
 export const state = {
   data: [],
-  isLoading: false
+  isLoading: false,
+  isSideBar: false
 };

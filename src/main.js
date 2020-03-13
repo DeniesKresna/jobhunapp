@@ -3,17 +3,15 @@ import App from './App.vue'
 import './registerServiceWorker'
 import router from './router'
 import store from './store/store'
-//import $ from "jquery";
 
-import './assets/css/bootstrap-grid.css';
-import './assets/css/icons.css';
-import './assets/css/animate.min.css';
-import './assets/css/style.css';
-import './assets/css/responsive.css';
-import './assets/css/chosen.css';
-import './assets/css/bootstrap-grid.css';
-import './assets/css/colors/colors.css';
-import './assets/css/bootstrap.css';
+//==========Buefy========================
+import Buefy from 'buefy'
+import 'buefy/dist/buefy.css'
+
+Vue.use(Buefy)
+//========================================
+
+import './assets/css/myapp.css';
 
 // importing the helper
 import interceptorsSetup from './interceptor';
