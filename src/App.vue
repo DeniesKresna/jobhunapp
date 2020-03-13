@@ -2,16 +2,24 @@
   <div id="app">
     <b-loading :is-full-page="isFullPage" :active.sync="isLoading" :can-cancel="isCanCancel"></b-loading>
     <div class="container is-fluid">
-        <header-element />
+        <div v-if="$route.path == '/'">
+          <hero-element />
+        </div>
+        <div v-else>
+          <header-element />
+        </div>
+    </div>
+    <div>
+      <router-view></router-view>
     </div>
   </div>
 </template>
 <script>
   import HeaderElement from './components/elements/HeaderElement'
-  import BannerElement from './components/elements/BannerElement'
+  import HeroElement from './components/elements/HeroElement'
   export default{
     components:{
-      HeaderElement, BannerElement
+      HeaderElement, HeroElement
     },
     data(){
       return{

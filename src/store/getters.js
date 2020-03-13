@@ -4,5 +4,8 @@ export const getters = {
   },
   isSidebar: (state)=>{
   	return state.isSidebar;
+  },
+  menus: (state)=>{
+  	return state.menus;
   }
 };
