@@ -6,7 +6,7 @@ export const state = {
   	{'text':'Beranda', 'path':'/'},
   	{'text':'Tentang', 'path':'/tentang'},
   	{'text':'Kelas', 'child':[
-  		{'text': 'Harga', 'path':'#'},
+  		{'text': 'Daftar Kelas', 'path':'Kelas'},
   		{'text': 'Testimoni', 'path':'#'}
   	]}
   ]
