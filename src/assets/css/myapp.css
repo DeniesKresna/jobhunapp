@@ -1,3 +1,16 @@
+@font-face {
+    font-family: 'maison_neuebook';
+    src: url('../fonts/maisonneue-book-webfont.woff2') format('woff2'),
+         url('../fonts/maisonneue-book-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body {
+  font-family: 'Helvetica','maison_neuebook', 'sans-serif', 'Arial';
+}
+
 .has-vertical-centered {
   display: flex;
   align-items: center;

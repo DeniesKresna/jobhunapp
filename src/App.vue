@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <b-loading :is-full-page="isFullPage" :active.sync="isLoading" :can-cancel="isCanCancel"></b-loading>
-    <div class="container is-fluid">
+    <div class="container">
         <div v-if="$route.path == '/'">
           <hero-element />
         </div>

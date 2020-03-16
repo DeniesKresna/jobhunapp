@@ -6,7 +6,11 @@ const layout = {
         jaclasses: [
             {'picture': require('../../assets/images/noimage.jpg'),
             'title':'Photography',
-            'description':'Kelas ini merupakan kelas belajar memotret dasar yang wajib dimiliki para millenial.'},
+            'description':'Kelas ini merupakan kelas belajar memotret dasar yang wajib dimiliki para millenial.',
+            'services':[
+                {'type':"Offline", 'location':"Jakarta"},
+                {'type':"Online"}
+            ]},
             {'picture': require('../../assets/images/noimage.jpg'),
             'title':'Photography',
             'description':'Kelas ini merupakan kelas belajar memotret dasar yang wajib dimiliki para millenial.'},

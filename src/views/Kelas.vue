@@ -1,6 +1,6 @@
 <template>
 <div class="container">
-	<div class="has-text-centered" style="margin-top: 100px; margin-bottom: 40px;">
+	<div class="has-text-centered" style="margin-top: 70px; margin-bottom: 30px;">
 		<h1 class="title">Pilih Kelas Akademi keinginan Kamu</h1>
 	</div>
 	<div class="columns is-multiline">
@@ -17,9 +17,24 @@
 			        <p>
 			          <strong>{{jaclass.title}}</strong> <!--<small>@johnsmith</small> <small>31m</small>-->
 			          <br>
-			          {{jaclass.description}}
+			          <!--{{jaclass.description}}-->
 			        </p>
 			      </div>
+			      <div v-for="service in jaclass.services" style="margin-bottom:5px;">
+				      <b-button type="is-primary" v-if="service.type == 'Online'">
+			                <span class="icon">
+						      <i class="fas fa-globe"></i>
+						    </span>
+						    <span>{{service.type}} - {{service.location}}</span>
+			          </b-button>
+			          <b-button type="is-success" v-else>
+			                <span class="icon">
+						      <i class="fas fa-door-closed"></i>
+						    </span>
+						    <span>{{service.type}}</span>
+			          </b-button>
+		      	  </div>
+		          <!--
 			      <nav class="level is-mobile">
 			        <div class="level-left">
 			          <a class="level-item" aria-label="reply">
@@ -38,7 +53,7 @@
 			            </span>
 			          </a>
 			        </div>
-			      </nav>
+			      </nav>-->
 			    </div>
 			  </article>
 			</div>
